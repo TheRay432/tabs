@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+h3 {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.tab_container {
+  width: 80%;
+  margin: 1rem auto;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.tab_inner_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 2rem;
+  color: gray;
+}
+
+.transportDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.tripBtnContainer {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+}
+
+.tripBtn {
+  border-radius: 15px;
+  border: 1px solid gray;
+  background-color: transparent;
+  color: gray;
+  padding: 1px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.tripBtn.active {
+  background-color: red;
+}
+
+.tripBtn.active p {
+  color: white;
+}
+
+.tripBtn p {
+  font-size: 12px;
+  margin-left: 3px;
+}
+/*# sourceMappingURL=all.css.map */
