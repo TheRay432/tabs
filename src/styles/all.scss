@@ -27,6 +27,7 @@ h3 {
 .transportDiv {
   display: flex;
   align-items: center;
+
   margin-bottom: 16px;
 }
 .tripBtnContainer {
@@ -44,13 +45,47 @@ h3 {
   align-items: center;
   cursor: pointer;
   &.active {
-    background-color: red;
-    p {
-      color: white;
+    background-color: rgb(245, 56, 56);
+    color: white;
+    .activeIcon {
+      filter: brightness(0) invert(1);
     }
   }
   p {
     font-size: 12px;
     margin-left: 3px;
   }
+}
+.tripBtn:hover {
+  background-color: rgb(245, 56, 56);
+  color: white;
+  & .activeIcon {
+    filter: brightness(0) invert(1);
+  }
+}
+/*product*/
+.productDiv {
+  display: flex;
+  margin-bottom: 16px;
+}
+.testBtn {
+  border-radius: 15px;
+  border: 1px solid $color-gray;
+  background-color: transparent;
+  color: $color-gray;
+  padding: 1px 12px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+}
+.productBtnContainer {
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+.blue {
+  white-space: nowrap;
+  cursor: pointer;
+  color: blue;
 }
