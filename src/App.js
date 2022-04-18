@@ -208,6 +208,7 @@ function App() {
         {/*產品規格 */}
         <div className={`productDiv ty ${showMoreProductsState.showName}`}>
           <h3>產品規格</h3>
+
           <ul className="productBtnContainer" ref={ref}>
             {productArr &&
               productArr.map((item) => (
@@ -219,6 +220,7 @@ function App() {
                 />
               ))}
           </ul>
+
           <div className="more" onClick={showMore}>
             {showMoreProductsState.state && (
               <>
