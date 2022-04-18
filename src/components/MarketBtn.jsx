@@ -1,31 +1,31 @@
 import React from "react";
 
-const ProductBtn = ({ item, setProductSelectBtn, productSelectBtn }) => {
+const MarketBtn = ({ item, marketSelectBtn, setMarketSelectBtn }) => {
   const handleBtnClick = (pName) => {
-    if (productSelectBtn.tName === pName) {
-      setProductSelectBtn({
+    if (marketSelectBtn.tName === pName) {
+      setMarketSelectBtn({
         tName: `${pName}`,
-        state: !productSelectBtn.state,
+        state: !marketSelectBtn.state,
       });
     } else {
-      setProductSelectBtn({
+      setMarketSelectBtn({
         tName: `${pName}`,
         state: true,
       });
     }
   };
   return (
-    <button
+    <li
       className={
-        productSelectBtn.tName === item.TagName && productSelectBtn.state
+        marketSelectBtn.tName === item.TagName && marketSelectBtn.state
           ? "testBtn active"
           : "testBtn"
       }
       onClick={() => handleBtnClick(item.TagName)}
     >
       {item.TagName}
-    </button>
+    </li>
   );
 };
 
-export default ProductBtn;
+export default MarketBtn;

@@ -1,31 +1,31 @@
 import React from "react";
 
-const ProductBtn = ({ item, setProductSelectBtn, productSelectBtn }) => {
+const CruiseBtn = ({ item, setCruiseSelectBtn, cruiseSelectBtn }) => {
   const handleBtnClick = (pName) => {
-    if (productSelectBtn.tName === pName) {
-      setProductSelectBtn({
+    if (cruiseSelectBtn.tName === pName) {
+      setCruiseSelectBtn({
         tName: `${pName}`,
-        state: !productSelectBtn.state,
+        state: !cruiseSelectBtn.state,
       });
     } else {
-      setProductSelectBtn({
+      setCruiseSelectBtn({
         tName: `${pName}`,
         state: true,
       });
     }
   };
   return (
-    <button
+    <li
       className={
-        productSelectBtn.tName === item.TagName && productSelectBtn.state
+        cruiseSelectBtn.tName === item.TagName && cruiseSelectBtn.state
           ? "testBtn active"
           : "testBtn"
       }
       onClick={() => handleBtnClick(item.TagName)}
     >
       {item.TagName}
-    </button>
+    </li>
   );
 };
 
-export default ProductBtn;
+export default CruiseBtn;

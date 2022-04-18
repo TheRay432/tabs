@@ -21,7 +21,7 @@ h3 {
 .tab_inner_container {
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem;
+  padding: 2rem 5px;
   color: $color-gray;
 }
 .transportDiv {
@@ -73,10 +73,18 @@ h3 {
   border: 1px solid $color-gray;
   background-color: transparent;
   color: $color-gray;
-  padding: 1px 12px;
+  padding: 1px 3px;
   align-items: center;
   cursor: pointer;
   font-size: 12px;
+  &:hover {
+    background-color: rgb(245, 56, 56);
+    color: white;
+  }
+  &.active {
+    background-color: rgb(245, 56, 56);
+    color: white;
+  }
 }
 .productBtnContainer {
   margin-left: 1rem;
@@ -86,6 +94,35 @@ h3 {
 }
 .blue {
   white-space: nowrap;
+  color: rgb(48, 167, 247);
+  font-weight: bold;
+  margin-left: 20px;
+  border: none;
+  position: relative;
+  font-size: 12px;
+  padding: 1px 3px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: gray;
+    margin-left: -10px;
+  }
+}
+.more {
+  display: flex;
+  height: fit-content;
   cursor: pointer;
-  color: blue;
+  svg {
+    color: rgb(48, 167, 247);
+  }
+}
+.productDiv.ty {
+  height: 20px;
+  overflow-y: hidden;
+}
+.productDiv.show {
+  height: auto;
+  overflow-y: visible;
 }

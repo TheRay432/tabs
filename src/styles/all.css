@@ -29,7 +29,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem 2rem;
+  padding: 2rem 5px;
   color: gray;
 }
 
@@ -104,12 +104,22 @@ h3 {
   border: 1px solid gray;
   background-color: transparent;
   color: gray;
-  padding: 1px 12px;
+  padding: 1px 3px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
   font-size: 12px;
+}
+
+.testBtn:hover {
+  background-color: #f53838;
+  color: white;
+}
+
+.testBtn.active {
+  background-color: #f53838;
+  color: white;
 }
 
 .productBtnContainer {
@@ -124,7 +134,45 @@ h3 {
 
 .blue {
   white-space: nowrap;
+  color: #30a7f7;
+  font-weight: bold;
+  margin-left: 20px;
+  border: none;
+  position: relative;
+  font-size: 12px;
+  padding: 1px 3px;
+}
+
+.blue::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: gray;
+  margin-left: -10px;
+}
+
+.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   cursor: pointer;
-  color: blue;
+}
+
+.more svg {
+  color: #30a7f7;
+}
+
+.productDiv.ty {
+  height: 20px;
+  overflow-y: hidden;
+}
+
+.productDiv.show {
+  height: auto;
+  overflow-y: visible;
 }
 /*# sourceMappingURL=all.css.map */
